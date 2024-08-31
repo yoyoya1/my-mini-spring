@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b6d9651-73a6-4340-aad9-0a3e4a5d8ddd" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/main-remote-jar.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/py/spring/BeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/py/spring/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/apt/format.apt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/apt/index.apt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/fml/faq.fml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/fr/apt/format.apt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/fr/apt/index.apt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/fr/fml/faq.fml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/fr/xdoc/xdoc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/site_fr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/xdoc/xdoc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cn/py/spring/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cn/py/spring/bean/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2lN0CLNWp2N3pro0ugaQgEKDyHM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="ApiTest.test_BeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-mini-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.py.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.py.spring" />
+      <option name="MAIN_CLASS_NAME" value="cn.py.spring.ApiTest" />
+      <option name="METHOD_NAME" value="test_BeanFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ApiTest.test_BeanFactory" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="2b6d9651-73a6-4340-aad9-0a3e4a5d8ddd" name="更改" comment="" />
+      <created>1725005098162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725005098162</updated>
+      <workItem from="1725005099214" duration="1646000" />
+      <workItem from="1725095121847" duration="899000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
