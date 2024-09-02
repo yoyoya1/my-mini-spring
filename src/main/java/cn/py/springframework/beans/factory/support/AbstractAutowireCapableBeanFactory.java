@@ -1,9 +1,13 @@
 package cn.py.springframework.beans.factory.support;
 
 import cn.py.springframework.beans.BeansException;
+import cn.py.springframework.beans.PropertyValue;
+import cn.py.springframework.beans.PropertyValues;
 import cn.py.springframework.beans.factory.config.BeanDefinition;
+import cn.py.springframework.beans.factory.config.BeanReference;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory{
 
@@ -13,11 +17,37 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         Object bean = null;
         try {
             bean = createBeanInstance(beanDefinition, beanName, args);
+            applyPropertyValues(beanDefinition, bean, beanName);
         } catch (BeansException e) {
             throw new BeansException("Instantiation of bean failed");
         }
         addSingleton(beanName, bean);
         return bean;
+    }
+
+    /**
+     * bean属性填充
+     */
+    protected void applyPropertyValues(BeanDefinition beanDefinition, Object bean, String beanName) {
+        try {
+        PropertyValues propertyValues = beanDefinition.getPropertyValues();
+        // 循环填充
+        for (PropertyValue propertyValue : propertyValues.getPropertyValueList()) {
+            String name = propertyValue.getName();
+            Object value = propertyValue.getValue();
+            if (value instanceof BeanReference) {
+//                value = getBean(name); 为什么要用下面这种设计?
+                BeanReference beanReference = (BeanReference) value;
+                value = getBean(beanReference.getBeanName());
+            }
+            // 设置bean值
+            Field declaredField = beanDefinition.getBeanClass().getDeclaredField(name);
+            declaredField.setAccessible(true);
+            declaredField.set(bean, value);
+        }
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            throw new BeansException("Failed to apply propertyValues");
+        }
     }
 
     @Override
