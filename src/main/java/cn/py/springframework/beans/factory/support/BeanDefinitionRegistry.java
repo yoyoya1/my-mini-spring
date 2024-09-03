@@ -5,4 +5,6 @@ import cn.py.springframework.beans.factory.config.BeanDefinition;
 
 public interface BeanDefinitionRegistry {
     void registryBeanDefinition(String beanName, BeanDefinition beanDefinition);
+
+    boolean containBeanDefinition(String beanName);
 }
